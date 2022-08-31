@@ -103,23 +103,17 @@ html{
   padding:0.2rem 5rem;
   background-color: white ;
 }
-.gm{
-  display:flex;
-  flex-direction:column;
-  width:100%;
-  height:100vh;
-  align-items:center;
-  justify-content: center;
-}
+
 .game{
   margin-top:10rem;
-  padding:18rem;
-  margin-left:18rem;
+  padding: 18rem;
+  background-size: 30rem;
+  margin-inline: 2.5rem;
   background-image: url("../assets/bg-pentagon.svg");
   background-repeat: no-repeat;
 }
 .rows{
-  margin-top:-21rem;
+  margin-top:-22rem;
   width:100%;
   height:40%;
 }
@@ -128,12 +122,12 @@ html{
 }
 
 .firstrow{
-  margin-top:-1rem;
-  margin-left:-1.5rem;
+  margin-top:0rem;
+  margin-left:0rem;
 }
 .secondrow{
   margin-top:6rem;
-  margin-left:-12rem;
+  margin-left:-10rem;
 }
 .scissor,.spock,.lizard,.rock,.paper,.rock1,.paper1,.spock1,.scissor1,.lizard1{
   padding:1.4rem;
@@ -149,6 +143,9 @@ html{
   margin-left:-5rem;
   border:1rem solid hsl(39, 89%, 49%);
 }
+.scissor{
+  margin-left:-6rem;
+}
 .spock,.spock1{
   margin-left:-5rem;
   border:1rem solid hsl(189, 59%, 53%);
@@ -161,10 +158,10 @@ html{
   border:1rem solid hsl(230, 89%, 62%);
 }
 .paper{
-  margin-left:20rem;
+  margin-left:14rem;
 }
 .lizard,.lizard1{
-  margin-left:-5rem;
+  margin-left:-6.5rem;
   border:1rem solid hsl(261, 73%, 60%);
 }
 .rock,.rock1{
@@ -172,7 +169,7 @@ html{
   border:1rem solid hsl(349, 71%, 52%);
 }
 .rock{
-  margin-left:10rem;
+  margin-left:6rem;
 }
 .footer{
   width:100%;
@@ -270,14 +267,16 @@ html{
 .close:hover{
   background-color: cyan;
 }
-@media screen and (min-width:768px) {
+@media screen and (min-width:540px) {
   html{
     font-size:130%;
     width:100%;
     height:100vh;
   }
   .nav{
+    width:55%;
     margin-top:2rem;
+    margin-left:12rem;
     padding:1rem;
     border:0.4rem solid hsl(217, 16%, 45%);
     border-radius: 1rem;
@@ -301,14 +300,12 @@ html{
     display:flex;
     flex-direction:column;
     width:100%;
-    height:100vh;
     margin-left:0rem;
     align-items:center;
-    justify-content: center;
   }
   .game{
     margin-left:18rem;
-    margin-top:20rem;
+    margin-top:5rem;
     padding:18rem;
     
     background-size: 30rem;
@@ -378,10 +375,11 @@ html{
   }
   .footer{
     width:100%;
-    margin-top:8rem;
+    margin-top:-10rem;
     display:flex;
     flex-direction:row;
-    justify-content: center;
+    margin-left: -5rem;
+    justify-content:flex-end;
   }
   .rules{
     width:20%;
@@ -401,14 +399,11 @@ html{
     align-items: center;
     width:30%;
     height:30rem;
-    top:0;
-    left:0;
+    top:20rem;
+    left:20rem;
     background-color:white;
     background-repeat: no-repeat;
-    border-left:22rem solid rgba(56, 38, 38, 0.027);
-    border-top:10rem solid rgba(105, 93, 93, 0.822);
-    border-bottom:25rem solid rgba(165, 164, 164, 0.301);
-    border-right:23rem solid rgba(165, 164, 164, 0.822);
+  
   }
   .close{
     width:40%;
