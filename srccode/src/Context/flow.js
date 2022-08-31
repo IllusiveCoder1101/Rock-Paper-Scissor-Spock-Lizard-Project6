@@ -11,15 +11,12 @@ function AppProvider({children}) {
     const computer=()=>{
         return Math.floor(Math.random()*4)
     }
-    
-    const getValue=()=>{
-        return localStorage.getItem("score")
-    }
+
     const changepage=(value)=>{
         setPage(value)
     }
     return(
-        <AppContext.Provider value={{picked,pick,computer,page,changepage,getValue}}>
+        <AppContext.Provider value={{picked,pick,computer,page,changepage}}>
             {children}
         </AppContext.Provider>
     )

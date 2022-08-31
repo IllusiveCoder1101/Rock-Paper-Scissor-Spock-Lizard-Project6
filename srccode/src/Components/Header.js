@@ -1,5 +1,4 @@
 import React from 'react'
-
 function Header() {
 
   return (
@@ -9,7 +8,7 @@ function Header() {
         </div>
         <div className="score">
             <p className='title'>SCORE</p>
-            <h1 className='value'>{localStorage.getItem("score")}</h1>
+            <h1 className='value'>{localStorage.getItem("score2")}</h1>
         </div>
     </div>
   )

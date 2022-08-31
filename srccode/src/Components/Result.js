@@ -7,14 +7,24 @@ function Result() {
   const value=computer()
   const tmp=Logic(picked,value)
   if(tmp==="YOU WIN"){
-    localStorage.setItem("score",parseInt(localStorage.getItem("score"))+1)
+    if(localStorage.getItem("score2"))
+      localStorage.setItem("score2",parseInt((localStorage.getItem("score2")))+1)
+      
+      
+    else
+      localStorage.setItem("score2",1)
   }
   else if(tmp==="YOU LOSE"){
-    if(parseInt(localStorage.getItem("score"))===0){
-      localStorage.setItem("score",0)
+    if(parseInt(localStorage.getItem("score2"))===0){
+      localStorage.setItem("score2","0")
     }
     else{
-      localStorage.setItem("score",parseInt(localStorage.getItem("score"))-1)
+      if(localStorage.getItem("score2"))
+        localStorage.setItem("score2",parseInt((localStorage.getItem("score2")))-1)
+        
+        
+      else
+        localStorage.setItem("score2",0)
     }
   }
   return (
