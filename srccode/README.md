@@ -55,7 +55,7 @@ I would like to add more animations to make my pages more responsive.
 ### Useful resources
 
 - [CodewithMosh](https://www.codewithmosh.com) - Mosh helped me learn the basics of html,css and javascript.
-- [John Smilga](https://github.com/john-smilga.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [John Smilga](https://github.com/john-smilga.com)  John helped me to learn the basics as well as some advanced concepts of react.
 
 
 ## Author
